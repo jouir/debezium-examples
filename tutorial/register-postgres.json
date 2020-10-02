@@ -9,6 +9,8 @@
         "database.password": "postgres",
         "database.dbname" : "postgres",
         "database.server.name": "dbserver1",
-        "schema.whitelist": "inventory"
+        "schema.include.list": "inventory",
+        "heartbeat.interval.ms": "5000",
+        "heartbeat.action.query": "update inventory.heartbeat set ts=now();"
     }
 }
